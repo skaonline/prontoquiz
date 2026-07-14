@@ -14,10 +14,5 @@ L'URL della privacy policy serve per:
 - `privacy.html` — informativa sulla privacy.
 - `README.md` — questo file.
 
-## Come pubblicare
-1. Carica questi file nella **root** del repository collegato a GitHub Pages.
-2. In *Settings → Pages*, imposta la sorgente sul branch corretto (es. `main`, cartella `/root`).
-3. Attendi qualche minuto: le pagine saranno online agli URL sopra.
-
 ## Contatti
 📧 mimaapp@outlook.com
