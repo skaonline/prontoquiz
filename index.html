@@ -26,21 +26,34 @@
       display: flex; flex-direction: column; min-height: 100vh;
     }
     .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px; width: 100%; }
+    
     .brand { font-size: 30px; font-weight: 800; letter-spacing: -0.4px; color: var(--blu); }
     .brand span { color: var(--testo); }
-    .tag { display: inline-block; margin-top: 8px; color: var(--testo-2); font-size: 15px; }
-    .lead { font-size: 18px; margin-top: 26px; }
-    ul { padding-left: 20px; }
-    li { margin: 6px 0; }
-    .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .tag { display: inline-block; margin-top: 8px; color: var(--testo-2); font-size: 16px; font-weight: 500;}
+    
+    /* Stili per il testo */
+    h2 { font-size: 22px; color: var(--blu); margin-top: 48px; margin-bottom: 16px; letter-spacing: -0.3px; text-transform: uppercase; font-size: 16px; letter-spacing: 1px;}
+    h3 { font-size: 18px; color: var(--testo); margin-top: 28px; margin-bottom: 8px; }
+    p { margin-top: 0; margin-bottom: 18px; font-size: 16px; }
+    .lead { font-size: 18px; margin-top: 32px; font-weight: 500; }
+    .conclusione { font-size: 20px; font-weight: bold; text-align: center; margin-top: 48px; color: var(--blu); }
+    
+    /* Liste */
+    ul { padding-left: 20px; margin-bottom: 24px; }
+    li { margin: 10px 0; }
+    
+    /* Pulsanti */
+    .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--bordo); justify-content: center;}
     .btn {
       display: inline-block; text-decoration: none; font-weight: 600;
-      padding: 12px 20px; border-radius: 10px; border: 1px solid var(--blu);
+      padding: 12px 24px; border-radius: 10px; border: 1px solid var(--blu); transition: all 0.2s;
     }
     .btn.primary { background: var(--blu); color: #fff; }
     .btn.ghost { color: var(--blu); background: transparent; }
+    
     footer { margin-top: auto; padding: 22px 20px; border-top: 1px solid var(--bordo); color: var(--testo-2); font-size: 14px; text-align: center; }
     footer a { color: var(--testo-2); }
+    
     @media (prefers-color-scheme: dark) {
       :root {
         --testo: #ECEAE3; --testo-2: #A9A79E; --bordo: #2C2A24;
@@ -56,16 +69,52 @@
     <div class="tag">Quiz per l'esame di teoria della patente B</div>
 
     <p class="lead">
-      App Android <strong>gratuita</strong>, <strong>offline</strong> e senza account. Preparati all'esame
-      con quiz per argomento, schede d'esame simulate, statistiche e ripasso degli errori.
+      Supera l'esame teorico della Patente B al primo colpo con ProntoQuiz! 🚗💨<br><br>
+      ProntoQuiz Patente B è l'app gratuita e definitiva per prepararti all'esame della patente di guida. Contiene l'intero archivio ministeriale ufficiale aggiornato (7.185 domande e 25 argomenti) per farti arrivare al giorno del test preparato e senza paure.
     </p>
 
+    <h2>Perché scegliere ProntoQuiz?</h2>
+    <p>È completamente <strong>GRATIS, 100% OFFLINE, senza registrazione e senza account</strong>. Scarichi l'app e hai subito accesso a tutte le funzioni. I tuoi dati e i tuoi progressi restano al sicuro e privati, solo sul tuo telefono. Studi dove e quando vuoi: in autobus, a scuola o sul divano, anche senza connessione internet!</p>
+
+    <h2>Le funzioni principali che amerai</h2>
+    
+    <h3>📖 Spiegazioni per ogni domanda</h3>
+    <p>Hai sbagliato un quiz? Nessun problema! Al termine di ogni scheda potrai leggere la spiegazione di ogni errore per capire il perché della risposta corretta.</p>
+
+    <h3>🧠 Sistema intelligente "Ripasso Errori"</h3>
+    <p>L'app memorizza in automatico le domande che sbagli. Queste usciranno dal tuo "registro errori" solo quando dimostrerai di averle capite, rispondendo correttamente più volte di fila. È il metodo migliore per trasformare i punti deboli in punti di forza!</p>
+
+    <h3>🗣️ Lettura vocale inclusa</h3>
+    <p>Stanco di leggere sullo schermo? Un assistente vocale leggerà per te le domande e le spiegazioni ad alta voce, in italiano. Puoi regolarne la velocità e il tono a tuo piacimento. Ideale per chi impara meglio ascoltando.</p>
+
+    <h2>🎯 Tante modalità di studio</h2>
+    <p>Scegli l'allenamento perfetto in base al tuo livello di preparazione:</p>
     <ul>
-      <li>Oltre 7.000 domande ufficiali con spiegazioni</li>
-      <li>Schede d'esame a tempo, come all'esame reale</li>
-      <li>Statistiche, calendario di studio e ripasso mirato degli errori</li>
-      <li>Funziona senza connessione: i tuoi dati restano sul dispositivo</li>
+      <li><strong>Simulazione Esame:</strong> 30 domande, tempo massimo e limite di errori identici all'esame reale ministeriale. Scopri subito se saresti promosso o bocciato!</li>
+      <li><strong>Quiz per Argomento:</strong> Studia in modo mirato sui singoli capitoli (es. Precedenze, Limiti di velocità).</li>
+      <li><strong>Time Attack:</strong> Una vera sfida contro il cronometro. Rispondi a più domande possibili nel tempo stabilito.</li>
+      <li><strong>Quiz Liberi:</strong> Allenamento senza stress pescando da tutto l'archivio.</li>
+      <li><strong>Preferiti:</strong> Metti un segnalibro 🔖 alle domande più difficili per ritrovarle subito.</li>
     </ul>
+
+    <h2>📊 Statistiche, calendario e motivazione</h2>
+    <p>Tieni traccia dei tuoi progressi con la mappa visiva a colori (heatmap) degli argomenti, per capire a colpo d'occhio dove devi migliorare. Usa il Calendario integrato per impostare la data del tuo esame: un conto alla rovescia ti aiuterà a mantenere alta la concentrazione!</p>
+
+    <h2>🔒 Zero stress e rispetto dell'utente</h2>
+    <ul>
+      <li><strong>Nessuna ripetizione inutile:</strong> L'app ricorda cosa hai già fatto. Non rivedrai le stesse domande finché non avrai completato tutto l'archivio.</li>
+      <li><strong>Ricompense:</strong> Completa i giri di studio per sbloccare stelline, auto e diamanti!</li>
+      <li><strong>Due modi di rispondere:</strong> Usa i classici pulsanti Vero/Falso oppure usa il comodo gesto "Scorri" (Swipe sullo schermo).</li>
+      <li><strong>Backup dei dati:</strong> Esporta e importa i tuoi salvataggi per non perdere mai le tue statistiche se cambi telefono.</li>
+      <li><strong>Pubblicità non invasiva:</strong> Solo annunci distanziati dai pulsanti, per evitare tocchi accidentali e non disturbare il tuo studio.</li>
+      <li><strong>Tema Scuro / Chiaro:</strong> L'interfaccia si adatta alle tue preferenze per non affaticare la vista.</li>
+    </ul>
+
+    <p><em>Alla fine del quiz, condividi i tuoi "Risultati Perfetti" con i tuoi amici tramite un'immagine generata dall'app.</em></p>
+
+    <p class="conclusione">
+      Scarica ProntoQuiz Patente B oggi stesso e metti in moto il tuo successo. Il foglio rosa ti aspetta! 🚦🏁
+    </p>
 
     <div class="btns">
       <a class="btn primary" href="privacy.html">Privacy Policy</a>
